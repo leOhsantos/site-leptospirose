@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 11vh;
+}
+
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2e4e33;
+    border-radius: 20px;
+    border: 3px solid #fff;
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .8s;
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -150px, 0);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-150px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(150px, 0, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 150px, 0);
+}
+
+.select-disable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 96vh;
+    color: #fff;
+    background-color: rgba(103, 195, 141, 0.8);
+    overflow: hidden;
+    position: relative;
+}
+
+.ct-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-header {
+    width: 36%;
+    margin-top: 30px;
+}
+
+.nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    background: rgba(103, 195, 141, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+.nav-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.nav-title img {
+    height: 40px;
+    margin: 5px 5px 0 0;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    font-size: 17px;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+.nav-title a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-title a,
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.container-sobre {
+    display: flex;
+    justify-content: center;
+}
+
+.content-sobre {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: left;
+}
+
+.content-sobre h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+.content-sobre p {
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.main {
+    padding: 80px 100px 10px 100px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.container-topico-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.img-bacteria {
+    height: 60%;
+    max-height: 80%;
+    margin: 18px 0 6px 0;
+    border-radius: 10px;
+}
+
+.container-topico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.title-section {
+    font-size: 36px;
+    color: #67c38d;
+    margin-bottom: 12px;
+}
+
+.text-img-bacteria {
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.text {
+    text-align: left;
+    color: #000;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.img-icones {
+    height: 550px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+    color: #fff;
+    background-color: #67c38d;
+    flex-shrink: 0;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 10px 0;
+}
+
+.icone-rede {
+    width: 20px;
+    margin: 0 9px 0 9px;
+    transition: all .3s ease-in-out;
+}
+
+.icone-rede:hover {
+    transform: scale(1.15);
+}
