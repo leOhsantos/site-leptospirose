@@ -11,7 +11,7 @@ const ativarScroll = () => {
         }
     })
 }
-window.addEventListener("scroll", ativarScroll);
+window.addEventListener("scroll", _.debounce(ativarScroll, 100));
 
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
