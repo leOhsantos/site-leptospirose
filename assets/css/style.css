@@ -340,6 +340,10 @@ a {
         transform: translate3d(-150px, 0, 0);
     }
 
+    .header {
+        height: 92vh;
+    }
+
     .nav {
         position: fixed;
     }
@@ -417,7 +421,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 80px 0 20px 0;
+        margin: 88px 0 0 0;
     }
 
     .continuar-lendo {
@@ -460,14 +464,14 @@ a {
     }
 
     .content-sobre h1 {
-        font-size: 30px;
+        font-size: 28px;
         margin-bottom: 12px;
         white-space: normal;
         text-align: center;
     }
 
     .content-sobre p {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bolder;
         text-align: center;
     }
