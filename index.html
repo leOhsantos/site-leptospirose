@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="shortcut icon" href="assets/img/mouse.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Leptospirose</title>
@@ -14,14 +16,19 @@
     <header id="home" class="header">
         <nav class="nav">
             <h2 class="nav-title select-disable">
-                <a href="#home"><img src="assets/img/mouse.png" alt="Ícone ratinho">Leptospirose</a>
+                <a href="#home">Leptospirose</a>
             </h2>
+            <div class="mobile-menu">
+                <div class="line-1 line"></div>
+                <div class="line-2 line"></div>
+                <div class="line-3 line"></div>
+            </div>
             <ul class="nav-list select-disable">
-                <li class="nav-item"><a href="#sobre">O que é</a></li>
-                <li class="nav-item"><a href="#sintomas">Sintomas</a></li>
-                <li class="nav-item"><a href="#transmissao">Transmissão</a></li>
-                <li class="nav-item"><a href="#tratamento">Tratamento</a></li>
-                <li class="nav-item"><a href="#prevencao">Prevenção</a></li>
+                <li class="nav-item"><a class="bottom-animation" href="#sobre">O que é</a></li>
+                <li class="nav-item"><a class="bottom-animation" href="#sintomas">Sintomas</a></li>
+                <li class="nav-item"><a class="bottom-animation" href="#transmissao">Transmissão</a></li>
+                <li class="nav-item"><a class="bottom-animation" href="#tratamento">Tratamento</a></li>
+                <li class="nav-item"><a class="bottom-animation" href="#prevencao">Prevenção</a></li>
             </ul>
         </nav>
 
@@ -29,10 +36,16 @@
             <img class="img-header select-disable" src="assets/img/bg-header.png" alt="Imagem médicos">
             <div class="content-sobre">
                 <h1>Você sabe o que é a Leptospirose?</h1>
-                <p>Nesse site será abordado brevemente sobre essa doença, aqui você entenderá quais são seus
-                    sintomas, suas formas de transmissão, suas formas de tratamento e suas formas de prevenção.</p>
+                <p>Nesse site será abordado de forma breve sobre essa doença, aqui você entenderá quais são seus
+                    sintomas, suas formas de transmissão, tratamento e prevenção.</p>
             </div>
         </div>
+
+        <a href="#sobre">
+            <span class="continuar-lendo seta-animation select-disable">Continue lendo<br>
+                <span class="material-symbols-outlined seta seta-animation">expand_more</span>
+            </span>
+        </a>
     </header>
     <main class="main">
         <section id="sobre" class="section">
@@ -41,17 +54,22 @@
                 <p class="text" data-anime="left">A leptospirose é uma doença infecciosa causada através da exposição
                     direta ou indireta da urina de
                     animais (principalmente ratos) que estão infectados pela bactéria Leptospira.</p>
-                <img class="img-bacteria select-disable" src="assets/img/espiroqueta.png"
-                    alt="Imagem bactéria Leptospira" data-anime="left">
-                <p class="text-img-bacteria" data-anime="left">Bactéria helicoidal (espiroqueta) aeróbica obrigatória do
-                    gênero Leptospira.</p>
+                <div class="ct-img-bacteria" data-anime="left">
+                    <img class="img-bacteria select-disable" src="assets/img/espiroqueta.png"
+                        alt="Imagem bactéria Leptospira">
+                    <p class="text-img-bacteria">Bactéria helicoidal (espiroqueta) aeróbica
+                        obrigatória do
+                        gênero Leptospira.</p>
+                </div>
             </div>
         </section>
 
         <section id="sintomas" class="section">
-            <div class="container-topico" data-anime="left">
-                <h1 class="title-section">Quais são os sintomas dessa doença?</h1>
-                <p class="text">
+            <div class="container-topico">
+                <h1 class="title-section" data-anime="left">Quais são os sintomas dessa doença?</h1>
+                <img class="img-icones-mobile select-disable" src="assets/img/sintoma.svg" alt="Imagem sintomas"
+                    data-anime="right">
+                <p class="text" data-anime="left">
                     Febre, dor de cabeça, dores pelo corpo, principalmente nas panturrilhas (batata-da-perna), vômitos,
                     diarreia e tosse são os sintomas da Leptospirose. Nas formas mais graves geralmente aparece
                     icterícia
@@ -66,9 +84,11 @@
         <section id="transmissao" class="section">
             <img class="img-icones select-disable" src="assets/img/transmissao.svg" alt="Imagem transmissão"
                 data-anime="left">
-            <div class="container-topico" data-anime="right">
-                <h1 class="title-section">Como essa doença é transmitida?</h1>
-                <p class="text">
+            <div class="container-topico">
+                <h1 class="title-section" data-anime="right">Como essa doença é transmitida?</h1>
+                <img class="img-icones-mobile select-disable" src="assets/img/transmissao.svg" alt="Imagem transmissão"
+                    data-anime="left">
+                <p class="text" data-anime="right">
                     As Leptospiras presentes na água de enchentes ou inundações penetram no corpo humano pela pele,
                     principalmente se houver algum arranhão ou ferimento. O contato com água ou lama de esgoto, lagoas
                     ou
@@ -79,9 +99,11 @@
         </section>
 
         <section id="tratamento" class="section">
-            <div class="container-topico" data-anime="left">
-                <h1 class="title-section">Como essa doença é tratada?</h1>
-                <p class="text">
+            <div class="container-topico">
+                <h1 class="title-section" data-anime="left">Como essa doença é tratada?</h1>
+                <img class="img-icones-mobile select-disable" src="assets/img/tratamento.svg" alt="Imagem tratamento"
+                    data-anime="right">
+                <p class="text" data-anime="left">
                     O tratamento é baseado no uso de medicamentos e outras medidas de suporte, sempre orientado por um
                     médico, de acordo com os sintomas apresentados. Os casos mais leves podem ser tratados em um
                     ambulatório, mas os casos mais graves precisam de internação hospitalar.
@@ -94,20 +116,26 @@
         <section id="prevencao" class="section">
             <img class="img-icones select-disable" src="assets/img/prevencao.svg" alt="Imagem prevenção"
                 data-anime="left">
-            <div class="container-topico" data-anime="right">
-                <h1 class="title-section">Como prevenir essa doença?</h1>
-                <p class="text">
-                    Para evitar a Leptospirose, são necessárias medidas ligadas ao meio ambiente, como obras de
-                    saneamento
-                    básico, melhorias nas habitações humanas e o combate aos ratos. Evitar o contato com água ou lama de
-                    enchentes e impedir que crianças nadem ou brinquem em águas ou outros ambientes que possam estar
-                    contaminados pela urina de ratos.
-                </p>
-                <p class="text">
-                    A pessoa que apresentar febre, dor de cabeça e dores no corpo, alguns dias depois de ter entrado em
-                    contato com as águas de enchente ou esgoto, deve procurar imediatamente o Centro de Saúde mais
-                    próximo.
-                </p>
+            <div class="container-topico">
+                <h1 class="title-section" data-anime="right">Como prevenir essa doença?</h1>
+                <img class="img-icones-mobile select-disable" src="assets/img/prevencao.svg" alt="Imagem prevenção"
+                    data-anime="left">
+                <div data-anime="right">
+                    <p class="text">
+                        Para evitar a Leptospirose, são necessárias medidas ligadas ao meio ambiente, como obras de
+                        saneamento
+                        básico, melhorias nas habitações humanas e o combate aos ratos. Evitar o contato com água ou
+                        lama de
+                        enchentes e impedir que crianças nadem ou brinquem em águas ou outros ambientes que possam estar
+                        contaminados pela urina de ratos.
+                    </p>
+                    <p class="text">
+                        A pessoa que apresentar febre, dor de cabeça e dores no corpo, alguns dias depois de ter entrado
+                        em
+                        contato com as águas de enchente ou esgoto, deve procurar imediatamente o Centro de Saúde mais
+                        próximo.
+                    </p>
+                </div>
             </div>
         </section>
     </main>
