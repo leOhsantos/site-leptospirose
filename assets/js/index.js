@@ -1,9 +1,9 @@
 const target = document.querySelectorAll("[data-anime]");
 
 const ativarScroll = () => {
-    const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
+    const windowTop = window.pageYOffset + (window.innerHeight * 0.96);
 
-    target.forEach((e) => {
+    target.forEach(e => {
         if (windowTop > e.offsetTop) {
             e.classList.add("animate");
         } else {
@@ -11,7 +11,7 @@ const ativarScroll = () => {
         }
     })
 }
-window.addEventListener("scroll", _.debounce(ativarScroll, 100));
+window.addEventListener("scroll", _.debounce(ativarScroll, 80));
 
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
@@ -38,7 +38,7 @@ class MobileNavbar {
 
     addClickEvent() {
         this.mobileMenu.addEventListener("click", this.handleClick);
-        this.navLinks.forEach((link) => {
+        this.navLinks.forEach(link => {
             link.addEventListener("click", this.handleClick);
         })
     }
