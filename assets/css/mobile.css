@@ -168,6 +168,10 @@
     font-size: 13px;
 }
 
+.content-referencia {
+    width: 20%;
+}
+
 .img-icones {
     display: none;
 }

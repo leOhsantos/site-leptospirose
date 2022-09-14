@@ -305,6 +305,12 @@ a:active {
     margin-top: 5px;
 }
 
+.content-referencia a {
+    color: #000;
+    text-decoration: underline;
+    word-wrap: break-word;
+}
+
 .img-icones {
     height: 550px;
 }
