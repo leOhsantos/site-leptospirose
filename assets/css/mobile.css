@@ -169,7 +169,9 @@
 }
 
 .content-referencia {
-    width: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .img-icones {
