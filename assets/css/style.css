@@ -311,6 +311,11 @@ a:active {
     word-wrap: break-word;
 }
 
+.text-biography {
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
 .img-icones {
     height: 550px;
 }
