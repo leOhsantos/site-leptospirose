@@ -117,16 +117,16 @@
 }
 
 .title-section {
-    font-size: 24px;
+    font-size: 23px;
 }
 
 .text {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .content-sobre {
     display: flex;
-    text-align: left;
+    text-align: center;
     width: unset;
     padding: 20px 30px 30px 30px;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 
 * {
     margin: 0;
@@ -15,6 +15,7 @@ html {
 body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
     overflow-x: hidden;
 }
 
@@ -110,6 +111,7 @@ a:active {
 
 .seta {
     font-size: 30px;
+    font-weight: 400;
     color: #fff;
 }
 
@@ -165,6 +167,7 @@ a:active {
     justify-content: center;
     align-items: center;
     font-size: 28px;
+    font-weight: 400;
 }
 
 .nav-title img {
@@ -180,7 +183,7 @@ a:active {
 
 .nav-item {
     font-size: 17px;
-    font-weight: bolder;
+    font-weight: 400;
     margin-left: 50px;
 }
 
@@ -232,13 +235,14 @@ a:active {
 
 .content-sobre h1 {
     font-size: 40px;
+    font-weight: 400;
     margin-bottom: 12px;
     white-space: nowrap;
 }
 
 .content-sobre p {
     font-size: 21px;
-    font-weight: bolder;
+    font-weight: 400;
 }
 
 .main {
@@ -278,7 +282,8 @@ a:active {
 }
 
 .title-section {
-    font-size: 36px;
+    font-size: 35px;
+    font-weight: 400;
     color: #67c38d;
     margin-bottom: 12px;
 }
@@ -301,7 +306,7 @@ a:active {
     text-align: left;
     color: #000;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: 400;
     margin-top: 5px;
 }
 
@@ -312,8 +317,7 @@ a:active {
 }
 
 .text-biography {
-    font-family: sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .img-icones {
@@ -351,6 +355,11 @@ a:active {
     transform: scale(1.15);
 }
 
+.footer h5 {
+    font-weight: 400;
+}
+
 .footer h5 a {
+    font-weight: 400;
     color: #fff;
 }
