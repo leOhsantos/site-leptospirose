@@ -297,21 +297,21 @@ a:active {
 
 .text-img-bacteria {
     text-align: center;
-    color: #000;
+    color: #171717;
     font-size: 16px;
     font-weight: bolder;
 }
 
 .text {
     text-align: left;
-    color: #000;
+    color: #171717;
     font-size: 20px;
     font-weight: 400;
     margin-top: 5px;
 }
 
 .content-referencia a {
-    color: #000;
+    color: #171717;
     text-decoration: underline;
     word-wrap: break-word;
 }
