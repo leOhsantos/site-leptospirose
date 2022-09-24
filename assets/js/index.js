@@ -27,4 +27,4 @@ function animateElements() {
 }
 
 mobileMenu.addEventListener("click", handleMenuButton);
-window.addEventListener("scroll", _.debounce(animateElements, 80));
+window.addEventListener("scroll", animateElements);
