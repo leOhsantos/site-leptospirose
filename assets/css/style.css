@@ -10,6 +10,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 12vh;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
 }
 
 body {

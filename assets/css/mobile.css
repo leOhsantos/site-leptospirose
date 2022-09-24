@@ -4,10 +4,6 @@
     z-index: -1;
 }
 
-[data-anime="right"] {
-    transform: translate3d(-150px, 0, 0);
-}
-
 .header {
     height: 92vh;
 }
