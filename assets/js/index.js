@@ -1,7 +1,8 @@
 const mobileMenu = document.querySelector(".mobile-menu"),
     navList = document.querySelector(".nav-list"),
     navItems = document.querySelectorAll(".nav-item"),
-    target = document.querySelectorAll("[data-anime]");
+    target = document.querySelectorAll("[data-anime]"),
+    imgs = document.querySelectorAll(".img");
 
 function handleMenuButton() {
     navList.classList.toggle("active");
@@ -24,6 +25,12 @@ function animateElements() {
             e.classList.remove("animate");
         }
     })
+
+    if (window.matchMedia("(max-width: 999px)").matches) {
+        imgs.forEach((imgs) => {
+            imgs.setAttribute("data-anime", "bottom");
+        });
+    }
 }
 
 mobileMenu.addEventListener("click", handleMenuButton);

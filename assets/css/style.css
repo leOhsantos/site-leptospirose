@@ -44,7 +44,7 @@ a:active {
 
 [data-anime] {
     opacity: 0;
-    transition: .7s;
+    transition: .7s ease-in-out;
     z-index: -1;
 }
 
